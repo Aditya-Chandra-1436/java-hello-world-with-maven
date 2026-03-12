@@ -23,14 +23,10 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                echo 'Deploying JAR to production...'
-                sh 'mkdir -p /tmp/apps && cp target/my-sample-app-1.0-SNAPSHOT.jar /tmp/apps/ && echo "Deployment successful: JAR copied to /tmp/apps/"'
-            }
-        }
+ 
     }
 }
+
 
 
 
